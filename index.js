@@ -3,8 +3,19 @@ console.log('Testing the log feature of JS');
 
 
 /*
-Primitive Types - String, Number, Boolean, Undefined (undefined type) & NULL (object type)
-Reference Types - Object, Arrays, Functions
+LET & CONST are the block scoped
+But, let and const differ in a way that CONST cannot be re-assigned.
+*/
+
+let myVariable = 2;
+const myVariable2 = 123;
+
+//You can try playing with above 2 variables.
+
+
+/*
+Primitive Types - String, Number, Boolean, Undefined (undefined type) & NULL (object type) & Symbol.
+Reference Types - Object, Arrays, Functions.
 */
 
 /*let is the best way to assign a value to a variable, There are other options like const for numbers.*/
@@ -20,14 +31,8 @@ console.log('Here is how you can log items using the console.log() function!!!')
 
 
 
-
-
-
-
-
-
-
 //OBJECTS in JavaScript
+// You can use CONST or LET whichever suits your needs to define an Object.
 
 let person = 
 {
@@ -36,25 +41,20 @@ let person =
     sex : 'Male',
     inRelationship : true,
     attendedSchool : true,
-    ssn : 6692038173
+    ssn : 6692038173,
+    walk() {},
+    talk(){}                // Functions inside an Object are known as methods.
 };
-console.log(person)
 
 // You can also edit the value of any value you want, like this...
 person.firstName = 'Aakar Arun';
+person['firstName'];
+
+//You can use DOT operator or the Square Bracket notatin to access any property or method that you want to access.
+
 
 console.log(person)
 /*------------------------------------------------------------------------------------------------------------ */
-
-// ARRAYS - It is a Data Structure which we use to represent a list of items.
-
-let selectedColors = ['red','blue','green'];
-console.log(selectedColors)
-console.log(selectedColors[1])
-
-let yourSelection = [1,2,3,4,5]
-console.log(yourSelection)
-
 
 
 
@@ -68,6 +68,23 @@ function greet(name) //This is a parameterized function
 }
 
 
+
+
+
+// ARRAYS - It is a Data Structure which we use to represent a list of items.
+
+let selectedColors = ['red','blue','green'];
+console.log(selectedColors)
+console.log(selectedColors[1])
+
+let yourSelection = [1,2,3,4,5]
+console.log(yourSelection)
+
+
+
+
+//The THIS keyword in JavaScript, it is quite confusing compared to this in JAVA.
+// Here the THIS keyword is used to reference, 
 
 
 // ------------------------------------------- EMPLOYEE Directory ----------------------------------------------
